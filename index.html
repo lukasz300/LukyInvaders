@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spaceship</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="game" data-game_board>
+            <div class="main-menu">
+                <button class="button new-game__button">New Game</button>
+                <button class="button settings__button">Setting</button>
+            </div>
+            <div class="settings hidden">
+                <button class="button mute__button">Mute</button>
+                <button class="button unmute__button">Unmute</button>
+                <button class="button return__button">Return</button>
+            </div>
+            <div class="spaceship" data-spaceship></div>
+            <div class="information">
+                <div class="information__content">Score: <span class='points__counter'>0</span></div>
+                <div class="information__content lives"></div>
+            </div>
+            <div class="parallax parallax-1"></div>         
+            <div class="modal hidden">
+                <div class="modal__content">
+                <p class="modal__text"><p>
+                <button class="button modal__button">Restart</button>
+                </div>
+            </div>
+        </div>
+        <script src="/app/game.js" type="module"></script>
+    </body>
+</html>

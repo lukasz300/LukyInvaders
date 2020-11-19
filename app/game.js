@@ -182,7 +182,7 @@ class Game {
 
   backgroundFlash(){
   this.htmlElements.container.style.backgroundImage = `none`;
-   setTimeout(() => this.htmlElements.container.style.backgroundImage= "url('./images/backgorund.jpg')", 80);
+   setTimeout(() => this.htmlElements.container.style.backgroundImage= "url('images/backgorund.jpg')", 80);
 
   }
   changeLevel(){

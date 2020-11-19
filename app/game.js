@@ -194,7 +194,9 @@ class Game {
 
 }
 
-const game = function () {
+const newGame = function () {
   const game = new Game();
   game.init();
 };
+
+newGame();
